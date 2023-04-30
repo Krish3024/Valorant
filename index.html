@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"></a></div>
+            <ul class="links">
+                <li><a href="https://playvalorant.com/en-us/agents/">Agents</a></li>
+                <li><a href="https://playvalorant.com/en-us/arsenal/=\">Guns</a></li>
+                <li><a href="https://playvalorant.com/en-us/maps/">Maps</a></li>
+            </ul>
+            <a href="https://playvalorant.com/en-us/" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #3579ed;"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+                <li><a href="https://playvalorant.com/en-us/agents/">Agents</a></li>
+                <li><a href="https://playvalorant.com/en-us/arsenal/">Guns</a></li>
+                <li><a href="https://playvalorant.com/en-us/maps/">Maps</a></li>
+                <li><a href="https://playvalorant.com/en-us/" class="action_btn">Get started</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const DropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            DropDownMenu.classList.toggle('open');
+            const isOpen = DropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+        }
+    </script>
+    <div class="login-form">
+        <form action="#" method="post">
+            <input type="text" required="required" name="USERNAME">
+            <p>USERNAME</p>
+            <input type="password" required="required">
+            <p>PASSWORD</p><br>
+        </form>
+        <button type="submit">LOGIN</button>
+    </div>
+    
+    <p class="p1">
+        <!--FIGHT AROUND THE WORLD<br>
+        Blend your style and experience on a global, competitive stage.<br>
+        Attack and defend your side using sharp gunplay and tactical abilities.<br>
+        And, with one life per-round, you'll have to think faster than your opponent if you want to survive.<br><br>
+        
+        
+        CREATIVITY IS YOUR GREATEST WEAPON<br>
+        More than guns and bullets, you’ll choose an Agent armed with adaptive,<br>
+        swift, and lethal abilities that create opportunities to let your gunplay shine.<br>
+        Each map is purpose-built for team strategies, spectacular plays, and clutch moments.<br>
+        Make the plays others will imitate for years to come.</p>-->
+    <h3></h3>
+    <p class="p2">
+        <!--Phoenix<br>
+        Raze<br>
+        Jett<br>
+        Yoru<br>
+        Neon<br>
+        Reyna<br>
+        Sage<br>
+        Cypher<br>
+        Chamber<br>
+        Killjoy<br>
+        Omen<br>
+        Viper<br>
+        Brimstone<br>
+        Astra<br>
+        Harbor<br>
+        Sova<br>
+        Breach<br>
+        Skye<br>
+        KAY/O<br>
+        Fade<br>-->
+    </p>
+</body>
+</html>

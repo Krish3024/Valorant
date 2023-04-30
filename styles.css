@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Valorant';
+    src: url(Valorant.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Valorant2';
+    scr: url(TECHNO_CAPTURE.ttf) format('truetype');
+    src: url();
+}
+div {
+    cursor:context-menu;}
+body {
+    background-color: rgb(255, 0, 0);
+    /*background-image: linear-gradient(to right bottom, rgb(255, 0, 0) 35%,
+    rgb(0, 0, 0) 20%);*/
+    height: 80vh;
+    background-image: url(https://wallpapercave.com/wp/wp7282592.jpg);
+    background-size: cover;
+    background-position: center;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+a:hover{
+    color: rgb(48, 26, 148);
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Valorant', sans-serif;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.links:hover{
+    scale: 1.05;
+    transition: 0.3s ease;
+}
+.navbar .toggle_btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+.action_btn{
+    background-color: #6d04c9;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.3 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #000000;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+/* DROPDOWN MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    height: 0;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'Valorant', sans-serif;
+}
+.dropdown_menu.open {
+    height: 220px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px){
+    .navbar .action_btn {
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .navbar .links{
+        display: none;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 5ch;
+    color: rgb(0, 0, 0);
+    font-family: 'Valorant', sans-serif;
+    cursor:context-menu;
+    
+
+}
+h2 {
+    font-family: 'Valorant', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2cm;
+    margin-top: 10%;
+    cursor:context-menu;
+}
+
+p.p1 {
+    
+    text-align: center;
+    color: #000000;
+    cursor:context-menu;
+    font-family: 'Valorant2', sans-serif;
+}
+.login-form{
+    font-family: 'Valorant',sans-serif;
+    width: 350px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #000000;
+}
+.login-form input {
+    color: black;
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 1cm;
+    
+}
+.login form button {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+}
